@@ -3,10 +3,10 @@ import { AppBar, Toolbar, Typography, Button, Box, Container } from '@mui/materi
 import { Link, useNavigate } from 'react-router-dom';
 
 const Header = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // Стан для відстеження авторизації
+  const [isLoggedIn, setIsLoggedIn] = useState(false); 
   const navigate = useNavigate();
 
-  // Перевіряємо, чи є дані користувача в localStorage при завантаженні компонента
+
   useEffect(() => {
     const userData = localStorage.getItem('userData');
     if (userData) {
@@ -14,11 +14,11 @@ const Header = () => {
     }
   }, []);
 
-  // Функція для виходу
+
   const handleLogout = () => {
-    localStorage.removeItem('userData'); // Видаляємо дані користувача
-    setIsLoggedIn(false); // Оновлюємо стан
-    navigate('/'); // Перенаправляємо на головну сторінку
+    localStorage.removeItem('userData'); 
+    setIsLoggedIn(false); 
+    navigate('/');
   };
 
   return (
@@ -28,13 +28,12 @@ const Header = () => {
       sx={{
         bgcolor: 'white',
         color: 'black',
-        paddingY: '18px', // Відступи зверху і знизу
+        paddingY: '18px', // 
       }}
     >
-      <Box sx={{ px: '35px' }}> {/* Збільшено відступи зліва і справа */}
+      <Box sx={{ px: '35px' }}> 
         <Container maxWidth={false} sx={{ padding: 0 }}>
           <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', padding: 0 }}>
-            {/* Меню навігації */}
             <Box sx={{ display: 'flex', gap: '32px', alignItems: 'center', color: "#808080" }}>
               <Typography variant="body1" sx={{ cursor: 'pointer', fontWeight: 500 }}>
                 Home
@@ -50,22 +49,21 @@ const Header = () => {
               </Typography>
             </Box>
 
-            {/* Логотип */}
             <Box>
               <img
-                src="../../../src/assets/image/3 1 (1).png" // Замініть на правильний шлях до логотипу
+                src="../../../src/assets/image/3 1 (1).png" 
                 alt="Logo"
                 style={{
-                  height: '35px', // Налаштуйте висоту логотипу
+                  height: '35px', 
                   objectFit: 'contain',
                 }}
               />
             </Box>
 
-            {/* Кнопки */}
+
             <Box sx={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
               {isLoggedIn ? (
-                // Якщо користувач авторизований, показуємо кнопку "Log Out"
+
                 <Button
                   onClick={handleLogout}
                   variant="outlined"
@@ -82,7 +80,6 @@ const Header = () => {
                   Log Out
                 </Button>
               ) : (
-                // Якщо користувач не авторизований, показуємо кнопки "Log In" та "Sign Up"
                 <>
                   <Button
                     component={Link}

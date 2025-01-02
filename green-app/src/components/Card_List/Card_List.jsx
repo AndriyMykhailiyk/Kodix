@@ -41,8 +41,8 @@ const styles = {
   container: {
     zIndex: 1,
     display: 'flex',
-    alignItems: 'flex-start', // Вирівнювання по верхньому краю
-    flexWrap: 'wrap', // Дозволяємо перенос карток на наступний рядок, якщо не вистачає місця
+    alignItems: 'flex-start', 
+    flexWrap: 'wrap', 
     backgroundColor: '#f8f9fa',
     borderRadius: '24px',
     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
@@ -72,7 +72,7 @@ const styles = {
     fontSize: '12px',
     color: '#888',
     textTransform: 'uppercase',
-    height: '16px', // Фіксуємо висоту для вирівнювання
+    height: '16px', 
     textAlign: 'left',
     marginBottom: '0',
     fontFamily: "'Roboto', sans-serif",
@@ -82,7 +82,7 @@ const styles = {
     fontSize: '16px',
     fontWeight: 'bold',
     color: 'black',
-    overflow: 'hidden', // Запобігаємо виходу тексту за межі блоку
+    overflow: 'hidden', 
     textAlign: 'left',
     marginBottom: '0',
     fontFamily: "'Roboto', sans-serif",
@@ -91,8 +91,8 @@ const styles = {
   description: {
     fontSize: '14px',
     color: '#666',
-    height: '36px', // Фіксуємо висоту для вирівнювання
-    overflow: 'hidden', // Запобігаємо виходу тексту за межі блоку
+    height: '36px', 
+    overflow: 'hidden', 
     textAlign: 'left',
     marginBottom: '0',
     fontFamily: "'Roboto', sans-serif",

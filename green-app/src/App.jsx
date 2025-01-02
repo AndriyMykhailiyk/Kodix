@@ -1,6 +1,6 @@
 import React from 'react';
 import HomePage from './page/HomePage';
-import './styles/App.css'; // Переконайтеся, що шлях до файлу правильний
+import './styles/App.css'; 
 import photo from '../src/assets/image/Ellipse 2.png';
 import photo2 from '../src/assets/image/right.png';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
