@@ -7,7 +7,7 @@ import Money from '../../assets/icons/signup/Shape.png';
 import fast from '../../assets/icons/signup/Shape (1).png';
 import Shape from '../../assets/icons/signup/Shape (2).png';
 import Features from '../../assets/icons/signup/ic_stars.png';
-import { useNavigate } from 'react-router-dom'; // Додано useNavigate
+import { useNavigate } from 'react-router-dom'; 
 
 const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -18,7 +18,7 @@ const SignUp = () => {
     password: ''
   });
 
-  const navigate = useNavigate(); // Використовуємо useNavigate для перенаправлення
+  const navigate = useNavigate(); 
 
 
   const handleClickShowPassword = () => {

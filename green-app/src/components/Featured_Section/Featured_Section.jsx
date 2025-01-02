@@ -9,11 +9,11 @@ const GlobalClimateSummit = () => {
       <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <Box sx={{ display: 'flex', alignItems: 'center', marginBottom: 3 }}>
           <img
-            src={Icon} // Шлях до вашого зображення
+            src={Icon} 
             alt="Featured"
-            width={18} // Ширина зображення
-            height={18} // Висота зображення
-            style={{ marginRight: 8 }} // Відступ між зображенням і текстом
+            width={18} 
+            height={18} 
+            style={{ marginRight: 8 }} 
           />
           <Typography variant="h5" component="h1" gutterBottom sx={{ fontWeight: 'bold', margin: 0 }}>
             Featured

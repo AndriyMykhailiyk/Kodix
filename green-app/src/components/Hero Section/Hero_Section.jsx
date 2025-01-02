@@ -3,43 +3,42 @@ import React from 'react';
 const ImageBlock = () => {
   return (
     <div className='wrapperwew'>
-      {/* Перший блок з зображенням */}
+    
       <div style={{
           fontFamily: 'Arial, sans-serif',
           borderRadius: '24px',
           width: '1160px',
           height: '500px',
-          margin: '0 auto 22px', // Додано відступ знизу
+          margin: '0 auto 22px', 
           textAlign: 'center',
           backgroundColor: "#F5F5F5",
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          position: 'relative', // Додано для контролю z-index
-          zIndex: 1, // Встановлено z-index
-          overflow: 'hidden' // Додано для обрізання вмісту
+          position: 'relative', 
+          zIndex: 1,
+          overflow: 'hidden'
         }}>
-        {/* Сірий прямокутник з текстом */}
+   
         <div style={{
           position: 'absolute',
           left: '20px',
           bottom: '20px',
-          backgroundColor: 'rgba(0, 0, 0, 0.5)', // Напівпрозорий чорний колір
+          backgroundColor: 'rgba(0, 0, 0, 0.5)', 
           color: '#FFFFFF',
           padding: '8px 16px',
           borderRadius: '4px',
           fontSize: '14px',
-          zIndex: 2 // Щоб текст був над іншим вмістом
+          zIndex: 2 
         }}>
           Photo by Antara
         </div>
       </div>
 
-      {/* Другий блок з текстом */}
       <div style={{
           fontFamily: 'Arial, sans-serif',
           borderRadius: '24px',
-          margin: '0 auto', // Центрування блоку
+          margin: '0 auto', 
           padding: '10px',
           textAlign: 'center',
           color: '#333333',

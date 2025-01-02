@@ -3,7 +3,7 @@ import { Box, TextField, Button, Typography, Link, InputAdornment } from '@mui/m
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import { useNavigate } from 'react-router-dom'; // Додано useNavigate для перенаправлення
+import { useNavigate } from 'react-router-dom'; 
 
 const SignIn = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -11,8 +11,8 @@ const SignIn = () => {
     email: '',
     password: ''
   });
-  const [error, setError] = useState(''); // Стейт для помилок
-  const navigate = useNavigate(); // Використовуємо useNavigate
+  const [error, setError] = useState(''); 
+  const navigate = useNavigate(); 
 
   const handleClickShowPassword = () => {
     setShowPassword(!showPassword);
@@ -28,21 +28,16 @@ const SignIn = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Отримуємо дані з localStorage
     const userData = JSON.parse(localStorage.getItem('userData'));
-
-    // Перевіряємо, чи існують дані
     if (!userData) {
       setError('Користувача не знайдено. Зареєструйтесь спочатку.');
       return;
     }
 
-    // Перевіряємо, чи збігаються email та пароль
     if (userData.email === formData.email && userData.password === formData.password) {
-      setError(''); // Очищаємо помилки
+      setError(''); 
       alert('Вхід успішний! Ви будете перенаправлені на головну сторінку.');
-      navigate('/'); // Перенаправляємо на головну сторінку
+      navigate('/');
     } else {
       setError('Невірний email або пароль.');
     }

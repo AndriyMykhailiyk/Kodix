@@ -22,43 +22,56 @@ const Header = () => {
   };
 
   return (
+    <>
     <AppBar
       position="static"
       elevation={0}
       sx={{
         bgcolor: 'white',
         color: 'black',
-        paddingY: '18px', // 
+        paddingY: '18px', 
       }}
     >
       <Box sx={{ px: '35px' }}> 
         <Container maxWidth={false} sx={{ padding: 0 }}>
           <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', padding: 0 }}>
             <Box sx={{ display: 'flex', gap: '32px', alignItems: 'center', color: "#808080" }}>
-              <Typography variant="body1" sx={{ cursor: 'pointer', fontWeight: 500 }}>
+              <Typography variant="body1" sx={{ cursor: 'pointer', fontWeight: 500,
+              '&:hover': {
+        color: 'black', 
+      }, }}>
                 Home
               </Typography>
-              <Typography variant="body1" sx={{ cursor: 'pointer', fontWeight: 500 }}>
+              <Typography variant="body1" sx={{ cursor: 'pointer', fontWeight: 500,
+              '&:hover': {
+        color: 'black', 
+      }, }}>
                 Feature
               </Typography>
-              <Typography variant="body1" sx={{ cursor: 'pointer', fontWeight: 500 }}>
+              <Typography variant="body1" sx={{ cursor: 'pointer', fontWeight: 500,
+              '&:hover': {
+        color: 'black', 
+      }, }}>
                 Blog
               </Typography>
-              <Typography variant="body1" sx={{ cursor: 'pointer', fontWeight: 500 }}>
+              <Typography variant="body1" sx={{ cursor: 'pointer', fontWeight: 500,
+              '&:hover': {
+        color: 'black', 
+      }, }}>
                 Testimonials
               </Typography>
             </Box>
-
             <Box>
-              <img
-                src="../../../src/assets/image/3 1 (1).png" 
-                alt="Logo"
-                style={{
-                  height: '35px', 
-                  objectFit: 'contain',
-                }}
-              />
-            </Box>
+  <img
+    src="../../../src/assets/image/3 1 (1).png"
+    alt="Logo"
+    style={{
+      height: '35px',
+      objectFit: 'contain',
+      cursor: 'pointer', // Додаємо стиль для курсора
+    }}
+  />
+</Box>
 
 
             <Box sx={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
@@ -121,6 +134,12 @@ const Header = () => {
         </Container>
       </Box>
     </AppBar>
+    <div style={{
+width: "100%",
+height: "1px",
+backgroundColor: "#E6E6E6"
+    }}></div>
+    </>
   );
 };
 

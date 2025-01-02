@@ -3,7 +3,7 @@ import HomePage from './page/HomePage';
 import './styles/App.css'; 
 import photo from '../src/assets/image/Ellipse 2.png';
 import photo2 from '../src/assets/image/right.png';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SignIn from './page/SiginIn/SiginInPage';
 import SignUp from './page/SiginUp/SiginUpPage';
 import PostDetailWrapper from './page/PostDetails/PostDetailWrapper';
